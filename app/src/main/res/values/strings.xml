@@ -1,12 +1,5 @@
 <resources>
     <string name="app_name">Hallison Oliveira</string>
-    <string name="tab_text_1">JSON</string>
-    <string name="tab_text_2">XML</string>
-    <string name="search">Buscar</string>
-    <string name="publicPlace">Logradouro</string>
-    <string name="complement">Complemento</string>
-    <string name="neighborhood">Bairro</string>
-    <string name="city">Cidade</string>
-    <string name="state">Estado</string>
-    <string name="error_message">CEP não encontrado.</string>
+    <string name="mimic">Mimimc</string>
+    <string name="request_error">Erro ao processar requisição.</string>
 </resources>

@@ -8,8 +8,7 @@ import br.com.hallisonoliveira.exercicio2.R
 import br.com.hallisonoliveira.exercicio2.ui.main.mimic.MimicFragment
 
 private val TAB_TITLES = arrayOf(
-        R.string.tab_text_1,
-        R.string.tab_text_2
+        R.string.mimic
 )
 
 class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
@@ -17,7 +16,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
 
     override fun getItem(position: Int): Fragment {
         return when(position) {
-            JSON -> MimicFragment.newInstance()
+            MIMIC -> MimicFragment.newInstance()
             else -> MimicFragment.newInstance()
         }
     }
@@ -27,11 +26,10 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
     }
 
     override fun getCount(): Int {
-        return 2
+        return 1
     }
 
     companion object {
-        const val JSON = 0
-        const val XML = 1
+        const val MIMIC = 0
     }
 }

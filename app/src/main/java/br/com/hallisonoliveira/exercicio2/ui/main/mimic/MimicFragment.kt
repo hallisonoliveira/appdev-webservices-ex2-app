@@ -37,12 +37,12 @@ class MimicFragment : Fragment() {
         })
 
         // Acão para o clique do botão
-        buttonJsonSearch.setOnClickListener {
+        sendButton.setOnClickListener {
             try {
-                viewModel.getMimicText(editTextCep.text.toString().trim())
+                viewModel.getMimicText(textToConvertEditText.text.toString().trim())
             } catch (e: Exception) { // Tratamento de erro
                 Log.e(MimicFragment::class.java.simpleName, e.toString())
-                Toast.makeText(context, R.string.error_message, Toast.LENGTH_LONG).show()
+                Toast.makeText(context, R.string.request_error, Toast.LENGTH_LONG).show()
             }
         }
     }
