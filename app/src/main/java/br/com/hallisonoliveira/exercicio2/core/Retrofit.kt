@@ -1,6 +1,7 @@
 package br.com.hallisonoliveira.exercicio2.core
 
 import br.com.hallisonoliveira.exercicio2.api.MimicApi
+import br.com.hallisonoliveira.exercicio2.api.NumberApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Converter
@@ -12,12 +13,16 @@ class Retrofit {
 
         private const val BASE_URL = "http://192.168.25.147:8080/"
 
-        var mimicApi: MimicApi
-
-        init {
-            mimicApi = getRetrofit(
+        val mimicApi: MimicApi by lazy {
+            getRetrofit(
                 GsonConverterFactory.create()
             ).create(MimicApi::class.java)
+        }
+
+        val numberApi: NumberApi by lazy {
+            getRetrofit(
+                GsonConverterFactory.create()
+            ).create(NumberApi::class.java)
         }
 
         private fun createOkHttpClient() : OkHttpClient.Builder {

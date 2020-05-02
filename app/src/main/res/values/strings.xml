@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Hallison Oliveira</string>
+
+    <!-- Mimic -->
     <string name="mimic">Mimimc</string>
-    <string name="request_error">Erro ao processar requisição.</string>
+    <string name="enter_text_to_convert">Digite o texto a ser convertido</string>
+
+    <!-- Number -->
+    <string name="numbers">Numeros</string>
+    <string name="enter_numbers">Digite os números separados por \';\'</string>
+    <string name="increasing_order">Ordem crescente</string>
+    <string name="decreasing_order">Ordem decrescente</string>
+    <string name="pair_list">Números pares</string>
+
+    <!-- General -->
+    <string name="request_error">Erro ao processar requisição</string>
 </resources>
