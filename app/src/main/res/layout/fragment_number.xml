@@ -9,7 +9,7 @@
     android:paddingTop="32dp"
     android:paddingStart="24dp"
     android:paddingEnd="24dp"
-    tools:context="ui.main.mimic.MimicFragment">
+    tools:context="ui.main.number.NumberFragment">
 
     <EditText
         android:id="@+id/textToConvertEditText"

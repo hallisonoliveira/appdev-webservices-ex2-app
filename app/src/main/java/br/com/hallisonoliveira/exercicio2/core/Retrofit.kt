@@ -1,5 +1,6 @@
 package br.com.hallisonoliveira.exercicio2.core
 
+import br.com.hallisonoliveira.exercicio2.api.DateApi
 import br.com.hallisonoliveira.exercicio2.api.MimicApi
 import br.com.hallisonoliveira.exercicio2.api.NumberApi
 import okhttp3.OkHttpClient
@@ -23,6 +24,12 @@ class Retrofit {
             getRetrofit(
                 GsonConverterFactory.create()
             ).create(NumberApi::class.java)
+        }
+
+        val dateApi: DateApi by lazy {
+            getRetrofit(
+                GsonConverterFactory.create()
+            ).create(DateApi::class.java)
         }
 
         private fun createOkHttpClient() : OkHttpClient.Builder {

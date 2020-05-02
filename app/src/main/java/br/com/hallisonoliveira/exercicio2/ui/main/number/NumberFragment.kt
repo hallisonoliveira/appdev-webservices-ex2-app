@@ -35,8 +35,8 @@ class NumberFragment : Fragment() {
 
         // Registro de um observador que será acionado quando os dados forem recebidos
         viewModel.numbersLiveData.observe(viewLifecycleOwner, Observer { numbers ->
-            increasingListValue.text = numbers.pairList.first().toString()
-            decreasingListValue.text = numbers.pairList.first().toString()
+            increasingListValue.text = numbers.increasingOrder.toString()
+            decreasingListValue.text = numbers.decreasingOrder.toString()
             pairListValue.text = numbers.pairList.toString()
         })
 

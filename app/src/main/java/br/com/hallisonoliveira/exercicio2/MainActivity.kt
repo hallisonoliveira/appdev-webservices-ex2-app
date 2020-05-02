@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
 import br.com.hallisonoliveira.exercicio2.core.Retrofit
 import br.com.hallisonoliveira.exercicio2.ui.main.SectionsPagerAdapter
+import com.jakewharton.threetenabp.AndroidThreeTen
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,5 +20,6 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
 
         Retrofit()
+        AndroidThreeTen.init(this);
     }
 }
